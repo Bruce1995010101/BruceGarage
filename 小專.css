@@ -1,0 +1,93 @@
+:root{
+    --maincolor-1: rgba(223, 193, 94, 1);
+    --maincolor-1light: rgba(255, 226, 110, 1);
+    --maincolor-1verylight: rgba(255, 241, 185, 1);
+    --maincolor-1veryverylight: rgb(252, 242, 201);
+    --maincolor-2: rgba(94, 72, 61, 1);
+    --maincolor-2light: rgba(145, 115, 99, 1);
+    --maincolor-2verylight: rgba(186, 156, 140, 1);
+    --maincolor-2veryverylight: rgba(220, 190, 174, 1);
+    --maincolor-3: rgba(49, 47, 47, 1);
+    --maincolor-3l: #423F3F;
+    --maincolor-3light: rgba(106, 106, 104, 1);
+    --maincolor-3verylight: rgba(155, 155, 153, 1);
+    --maincolor-3veryverylight: rgba(197, 197, 195, 1);
+    --white: rgba(243, 241, 238, 1);
+    --pureWhite: #FFFFFF;
+    --dark:#100E0E;
+
+ 
+    --h1 :80px;
+    --h2 :70px;
+    --h3 :65px;
+    --h4 :60px;
+    --h5 :50px;
+    --h6 :30px;
+    --p :20px;
+    --logo :25px;
+    --ps :12px;
+    
+
+}
+
+
+
+.f_h1{font-size: var(--h1);}
+.f_h2{font-size: var(--h2);}
+.f_h3{font-size: var(--h3);}
+.f_h4{font-size: var(--h4);}
+.f_h5{font-size: var(--h5);}
+.f_h6{font-size: var(--h6);}
+.f_p{font-size: var(--p);}
+.f_ps{font-size: var(--ps);}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* https://fonts.google.com/specimen/Pacifico */
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.f_logo-size{font-size: var(--logo);}
+.f_ps{font-size: var(--ps);}
+
+
+
+.c_maincolor-1yellow{color:  var(--maincolor-1);}
+.c_maincolor-1yellowlight{color:  var(--maincolor-1light);}
+.c_maincolor-1yellowverylight{color:  var(--maincolor-1verylight);}
+.c_maincolor-2brown{color:  var(--maincolor-2);}
+.c_maincolor-2brownlight{color: var(--maincolor-2light);}
+.c_maincolor-2brownverylight{color:  var(--maincolor-2verylight);}
+.c_maincolor-2brownveryverylight{color:  var(--maincolor-2veryverylight);}
+.c_maincolor-3black{color:var(--maincolor-3);}
+.c_maincolor-3blackl{color:  var(--maincolor-3l);}
+.c_maincolor-3blacklight{color:  var(--maincolor-3light);}
+.c_maincolor-3blackverylight{color:  var(--maincolor-3verylight);}
+.c_maincolor-3blackveryverylight{color:  var(--maincolor-3veryverylight);}
+.c_white{color:  var(--white);}
+
+.bc_maincolor-1yellow{background-color:  var(--maincolor-1);}
+.bc_maincolor-1yellowlight{background-color:  var(--maincolor-1light);}
+.bc_maincolor-1yellowverylight{background-color:  var(--maincolor-1verylight);}
+.bc_maincolor-2brown{background-color:  var(--maincolor-2);}
+.bc_maincolor-2brownlight{background-color: var(--maincolor-2light);}
+.bc_maincolor-2brownverylight{background-color:  var(--maincolor-2verylight);}
+.bc_maincolor-2brownveryverylight{background-color:  var(--maincolor-2veryverylight);}
+.bc_maincolor-3black{background-color:var(--maincolor-3);}
+.bc_maincolor-3blackl{background-color:  var(--maincolor-3l);}
+.bc_maincolor-3blacklight{background-color:  var(--maincolor-3light);}
+.bc_maincolor-3blackverylight{background-color:  var(--maincolor-3verylight);}
+.bc_maincolor-3blackveryverylight{background-color:  var(--maincolor-3veryverylight);}
+.bc_white{background-color:  var(--white);}
+.bc_pureWhite{background-color:  var(--pureWhite);}
+.bc_dark{background-color:  var(--dark);}
+
+
+
+
