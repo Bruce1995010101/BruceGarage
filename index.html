@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bruce`s Garage</title>
-    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./_css/bootstrap.css">
     <script src="./_js/bootstrap.bundle.js"></script>
     <script src="./_js/bootstrap.min.js"></script>
-    <script src="./_js/popper.min.js"></script>
+    <script src="./_js/popper.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styleguide.css">
     <link rel="stylesheet" href="./小專.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,21 +241,44 @@
         }
 
 
-        @keyframes flyin{
-            0% {transform: translateX(500px);}
-            100% {transform: translateX(0);}
+        @keyframes flyin {
+            0% {
+                transform: translateX(500px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
         }
-        @keyframes flyout{
-            0% {transform: translateX(0);}
-            100% {transform: translateX(500px);}
+
+        @keyframes flyout {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(500px);
+            }
         }
-        @keyframes fadein{
-            0% {opacity: 0;}
-            100% {opacity: 100%;}
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 100%;
+            }
         }
-        @keyframes fadeout{
-            0% {opacity: 100%;}
-            100% {opacity: 0%;}
+
+        @keyframes fadeout {
+            0% {
+                opacity: 100%;
+            }
+
+            100% {
+                opacity: 0%;
+            }
         }
     </style>
 
@@ -504,7 +532,7 @@
         #main_section4_content {
             padding-top: 50px;
             padding-bottom: 50px;
-            padding: 50px 150px ;
+            padding: 50px 150px;
 
         }
 
@@ -640,14 +668,16 @@
                 font-size: 40px;
             }
         }
+
         @media screen and (max-width :576px) {
             #main_section5_title {
                 font-size: 40px;
             }
+
             #main_section5_word {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
+                padding-left: 0px;
+                padding-right: 0px;
+            }
         }
     </style>
     <!-- main_sectionFinal--------------------------------------------- -->
@@ -664,643 +694,646 @@
 
 
 <body>
-   <!-- nav--------------------------------------------- -->
-   <nav class="navbar navbar-expand-md bc_maincolor-3black fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand f_logo-size c_white pattaya-regular" href="./首頁.html">Bruce`s Garage</a>
-        <button id="nav_button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span id="nav_button_icon" class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul  class="navbar-nav  container-lg">
-                <li class="nav-item">
-                    <a id="nav-active" class="nav-link c_white active " aria-current="page" href="./首頁.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link c_white" href="./活動頁面.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link c_white" href="./結帳頁面.html" id="nav_shopbn">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link c_white" href="./offlineStore.html">Offline Store</a>
-                </li>
-            </ul>
-            
-            <ul class="navbar-nav ms-auto">
-                <li>
-                    <a class="nav-link c_white" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-question-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+    <!-- nav--------------------------------------------- -->
+    <nav class="navbar navbar-expand-md bc_maincolor-3black fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand f_logo-size c_white pattaya-regular" href="./首頁.html">Bruce`s Garage</a>
+            <button id="nav_button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span id="nav_button_icon" class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  container-lg">
+                    <li class="nav-item">
+                        <a id="nav-active" class="nav-link c_white active " aria-current="page"
+                            href="./首頁.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link c_white" href="./活動頁面.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link c_white" href="./結帳頁面.html" id="nav_shopbn">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link c_white" href="./offlineStore.html">Offline Store</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a class="nav-link c_white" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link c_white" href="#" id="nav_cart_bn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link c_white" href="#" id="user_circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <div id="nav_cart_ui_content" class="animate__animated move-rtl">
+        <button id="nav_cart_ui_cancel">x</button>
+        <div class="f_p mb-4">Your Cart</div>
+
+        <div class="text-center c_maincolor-3blacklight" id="nav_cart_ui_emptycarttext"> Your Cart Is empty</div>
+        <!-- spring1 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_spring1_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_spring1">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Spring Item 1
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring1_minus"
+                        onclick="minusCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
-                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
                         </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link c_white" href="#" id="nav_cart_bn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_spring1_input"
+                        onchange="inputChange(`cart_section2_tbody_spring1_input`,'nav_cart_ui_item_spring1_input',`cart_section2_tbody_spring1_input`,0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring1_plus"
+                        onclick="addCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
-                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link c_white" href="#" id="user_circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-
-    </div>
-</nav>
-<div id="nav_cart_ui_content" class="animate__animated move-rtl">
-    <button id="nav_cart_ui_cancel">x</button>
-    <div class="f_p mb-4">Your Cart</div>
-
-    <div class="text-center c_maincolor-3blacklight" id="nav_cart_ui_emptycarttext"> Your Cart Is empty</div>
-    <!-- spring1 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_spring1_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_spring1">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Spring Item 1
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_spring1_minus"
-                onclick="minusCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_spring1_input" onchange="inputChange(`cart_section2_tbody_spring1_input`,'nav_cart_ui_item_spring1_input',`cart_section2_tbody_spring1_input`,0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_spring1_plus"
-                onclick="addCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- spring2 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_spring2_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_spring2">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Spring Item 2
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_spring2_minus" 
-                onclick="minusCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_spring2_input"
-                    onchange="inputChange(`cart_section2_tbody_spring2_input`,'nav_cart_ui_item_spring2_input',`cart_section2_tbody_spring2_input`,1);cardVisible(1,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_spring2_plus" 
-                onclick="addCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- spring3 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_spring3_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_spring3">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Spring Item 3
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_spring3_minus" 
-                onclick="minusCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_spring3_input"
-                    onchange="inputChange(`cart_section2_tbody_spring3_input`,'nav_cart_ui_item_spring3_input',`cart_section2_tbody_spring3_input`,2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_spring3_plus" 
-                onclick="addCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- summer1 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_summer1_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_summer1">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Summer Item 1
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_summer1_minus" 
-                onclick="minusCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_summer1_input"
-                    onchange="inputChange(`cart_section2_tbody_summer1_input`,'nav_cart_ui_item_summer1_input',`cart_section2_tbody_summer1_input`,3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_summer1_plus" 
-                onclick="addCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- summer2 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_summer2_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_summer2">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Summer Item 2
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_summer2_minus" 
-                onclick="minusCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_summer2_input"
-                    onchange="inputChange(`cart_section2_tbody_summer2_input`,'nav_cart_ui_item_summer2_input',`cart_section2_tbody_summer2_input`,4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_summer2_plus" 
-                onclick="addCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- summer3 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_summer3_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_summer3">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Summer Item 3
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_summer3_minus" 
-                onclick="minusCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_summer3_input"
-                    onchange="inputChange(`cart_section2_tbody_summer3_input`,'nav_cart_ui_item_summer3_input',`cart_section2_tbody_summer3_input`,5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_summer3_plus" 
-                onclick="addCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- fall1 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_fall1_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_fall1">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Fall Item 1
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_fall1_minus" 
-                onclick="minusCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_fall1_input"
-                    onchange="inputChange(`cart_section2_tbody_fall1_input`,'nav_cart_ui_item_fall1_input',`cart_section2_tbody_fall1_input`,6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_fall1_plus" 
-                onclick="addCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- fall2 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_fall2_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_fall2">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Fall Item 2
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_fall2_minus" 
-                onclick="minusCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_fall2_input"
-                    onchange="inputChange(`cart_section2_tbody_fall2_input`,'nav_cart_ui_item_fall2_input',`cart_section2_tbody_fall2_input`,7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_fall2_plus" 
-                onclick="addCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- fall3 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_fall3_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_fall3">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Fall Item 3
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_fall3_minus" 
-                onclick="minusCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_fall3_input"
-                    onchange="inputChange(`cart_section2_tbody_fall3_input`,'nav_cart_ui_item_fall3_input',`cart_section2_tbody_fall3_input`,8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_fall3_plus" 
-                onclick="addCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- winter1 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_winter1_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_winter1">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Winter Item 1
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_winter1_minus" 
-                onclick="minusCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_winter1_input"
-                    onchange="inputChange(`cart_section2_tbody_winter1_input`,'nav_cart_ui_item_winter1_input',`cart_section2_tbody_winter1_input`,9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_winter1_plus" 
-                onclick="addCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- winter2 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_winter2_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_winter2">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Winter Item 2
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_winter2_minus" 
-                onclick="minusCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_winter2_input"
-                    onchange="inputChange(`cart_section2_tbody_winter2_input`,'nav_cart_ui_item_winter2_input',`cart_section2_tbody_winter2_input`,10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_winter2_plus" 
-                onclick="addCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- winter3 -->
-    <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_winter3_content">
-        <div class="col-7">
-            <div class="nav_cart_ui_content_item ">
-                <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_winter3">
-                </div>
-                <div class="ms-4 mt-4">
-                    <div class="f_p">
-                        Winter Item 3
-                    </div>
-                    <div class=" f_ps">
-                        NT500
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
-            <div class="input-group helmet_section2_product_buy">
-                <button class="input-group-text" id="nav_cart_ui_item_winter3_minus" 
-                onclick="minusCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-dash-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </button>
-                <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
-                    aria-label="Input group example" aria-describedby="basic-addon2"
-                    id="nav_cart_ui_item_winter3_input"
-                    onchange="inputChange(`cart_section2_tbody_winter3_input`,'nav_cart_ui_item_winter3_input',`cart_section2_tbody_winter3_input`,11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
-                <button class="input-group-text" id="nav_cart_ui_item_winter3_plus" onclick="plusButtun('nav_cart_ui_item_winter3_input' , `nav_cart_ui_item_winter3_input`)"
-                onclick="addCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
-                        class="bi bi-plus-square" viewBox="0 0 16 16">
-                        <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <br>
-    <div>
-        <button id="nav_cart_ui_gocheckoutbn">Go to Checkout Page</button>
-    </div>
-</div>
-<br><br>
-<div id="user_login_click">
-    <div id="user_content"></div>
-    <div id="user_container" class="container-lg">
-        <div id="user-login">
-            <div class="text-center">
-                <button id="user_container_cancel">x</button>
-                <div class="f_p c_maincolor-3black" id="user-login-text">User Login</div>
-                <label id="nav_cart_ui_email_input_warn"></label>
-                <div class="input-group" id="user-login-inp-email">
-                    <span class="input-group-text" id="basic-addon1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-fill" viewBox="0 0 16 16">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6">
-                            </path>
-                        </svg>
-                    </span>
-                    <input id="nav_cart_ui_email_input" type="email" class="form-control" placeholder="Email" aria-label="Input group example"
-                        aria-describedby="basic-addon1">
-                </div>
-                <br>
-                <div class="input-group" id="user-login-inp-password">
-                    <span class="input-group-text" id="basic-addon2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-lock" viewBox="0 0 16 16">
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                             <path
-                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1" />
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
                         </svg>
-                    </span>
-                    <input type="password" class="form-control" placeholder="password"
-                        aria-label="Input group example" aria-describedby="basic-addon2">
+                    </button>
                 </div>
-                <button id="user-register-bn">Register</button><button id="user_login_bn">Login</button>
             </div>
         </div>
+        <!-- spring2 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_spring2_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_spring2">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Spring Item 2
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring2_minus"
+                        onclick="minusCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_spring2_input"
+                        onchange="inputChange(`cart_section2_tbody_spring2_input`,'nav_cart_ui_item_spring2_input',`cart_section2_tbody_spring2_input`,1);cardVisible(1,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring2_plus"
+                        onclick="addCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- spring3 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_spring3_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_spring3">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Spring Item 3
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring3_minus"
+                        onclick="minusCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_spring3_input"
+                        onchange="inputChange(`cart_section2_tbody_spring3_input`,'nav_cart_ui_item_spring3_input',`cart_section2_tbody_spring3_input`,2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring3_plus"
+                        onclick="addCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- summer1 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_summer1_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_summer1">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Summer Item 1
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer1_minus"
+                        onclick="minusCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_summer1_input"
+                        onchange="inputChange(`cart_section2_tbody_summer1_input`,'nav_cart_ui_item_summer1_input',`cart_section2_tbody_summer1_input`,3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer1_plus"
+                        onclick="addCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- summer2 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_summer2_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_summer2">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Summer Item 2
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer2_minus"
+                        onclick="minusCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_summer2_input"
+                        onchange="inputChange(`cart_section2_tbody_summer2_input`,'nav_cart_ui_item_summer2_input',`cart_section2_tbody_summer2_input`,4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer2_plus"
+                        onclick="addCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- summer3 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_summer3_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_summer3">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Summer Item 3
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer3_minus"
+                        onclick="minusCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_summer3_input"
+                        onchange="inputChange(`cart_section2_tbody_summer3_input`,'nav_cart_ui_item_summer3_input',`cart_section2_tbody_summer3_input`,5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer3_plus"
+                        onclick="addCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- fall1 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_fall1_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_fall1">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Fall Item 1
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall1_minus"
+                        onclick="minusCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_fall1_input"
+                        onchange="inputChange(`cart_section2_tbody_fall1_input`,'nav_cart_ui_item_fall1_input',`cart_section2_tbody_fall1_input`,6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall1_plus"
+                        onclick="addCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- fall2 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_fall2_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_fall2">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Fall Item 2
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall2_minus"
+                        onclick="minusCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_fall2_input"
+                        onchange="inputChange(`cart_section2_tbody_fall2_input`,'nav_cart_ui_item_fall2_input',`cart_section2_tbody_fall2_input`,7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall2_plus"
+                        onclick="addCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- fall3 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_fall3_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_fall3">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Fall Item 3
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall3_minus"
+                        onclick="minusCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_fall3_input"
+                        onchange="inputChange(`cart_section2_tbody_fall3_input`,'nav_cart_ui_item_fall3_input',`cart_section2_tbody_fall3_input`,8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall3_plus"
+                        onclick="addCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- winter1 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_winter1_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_winter1">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Winter Item 1
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter1_minus"
+                        onclick="minusCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_winter1_input"
+                        onchange="inputChange(`cart_section2_tbody_winter1_input`,'nav_cart_ui_item_winter1_input',`cart_section2_tbody_winter1_input`,9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter1_plus"
+                        onclick="addCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- winter2 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_winter2_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_winter2">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Winter Item 2
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter2_minus"
+                        onclick="minusCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_winter2_input"
+                        onchange="inputChange(`cart_section2_tbody_winter2_input`,'nav_cart_ui_item_winter2_input',`cart_section2_tbody_winter2_input`,10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter2_plus"
+                        onclick="addCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- winter3 -->
+        <div class="row mb-2 nav_cart_ui_item_card" id="nav_cart_ui_item_winter3_content">
+            <div class="col-7">
+                <div class="nav_cart_ui_content_item ">
+                    <div class="nav_cart_ui_product_pic " id="nav_cart_ui_item_winter3">
+                    </div>
+                    <div class="ms-4 mt-4">
+                        <div class="f_p">
+                            Winter Item 3
+                        </div>
+                        <div class=" f_ps">
+                            NT500
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
+                <div class="input-group helmet_section2_product_buy">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter3_minus"
+                        onclick="minusCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-dash-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </button>
+                    <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
+                        aria-label="Input group example" aria-describedby="basic-addon2"
+                        id="nav_cart_ui_item_winter3_input"
+                        onchange="inputChange(`cart_section2_tbody_winter3_input`,'nav_cart_ui_item_winter3_input',`cart_section2_tbody_winter3_input`,11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter3_plus"
+                        onclick="plusButtun('nav_cart_ui_item_winter3_input' , `nav_cart_ui_item_winter3_input`)"
+                        onclick="addCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
+                            class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div>
+            <button id="nav_cart_ui_gocheckoutbn">Go to Checkout Page</button>
+        </div>
     </div>
-    <div id="user_login_click2"></div>
-</div>
+    <br><br>
+    <div id="user_login_click">
+        <div id="user_content"></div>
+        <div id="user_container" class="container-lg">
+            <div id="user-login">
+                <div class="text-center">
+                    <button id="user_container_cancel">x</button>
+                    <div class="f_p c_maincolor-3black" id="user-login-text">User Login</div>
+                    <label id="nav_cart_ui_email_input_warn"></label>
+                    <div class="input-group" id="user-login-inp-email">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6">
+                                </path>
+                            </svg>
+                        </span>
+                        <input id="nav_cart_ui_email_input" type="email" class="form-control" placeholder="Email"
+                            aria-label="Input group example" aria-describedby="basic-addon1">
+                    </div>
+                    <br>
+                    <div class="input-group" id="user-login-inp-password">
+                        <span class="input-group-text" id="basic-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-lock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1" />
+                            </svg>
+                        </span>
+                        <input type="password" class="form-control" placeholder="password"
+                            aria-label="Input group example" aria-describedby="basic-addon2">
+                    </div>
+                    <button id="user-register-bn">Register</button><button id="user_login_bn">Login</button>
+                </div>
+            </div>
+        </div>
+        <div id="user_login_click2"></div>
+    </div>
     <!-- main_section1--------------------------------------------- -->
     <div id="main_section1">
         <div id="main_section1_filter">
@@ -1395,13 +1428,16 @@
             <div>
                 <div class="c_maincolor-1yellow f_h5 main_section3_title">The Advantages Of Our Brand's Helmets</div>
                 <div class="main_section3_textdiv">
-                    <div class="c_maincolor-3blackveryverylight f_p main_section3_text"><span class="f_h6 c_white">Superior Quality:</span> We prioritize meticulous craftsmanship
+                    <div class="c_maincolor-3blackveryverylight f_p main_section3_text"><span
+                            class="f_h6 c_white">Superior Quality:</span> We prioritize meticulous craftsmanship
                         and utilize premium materials to
                         ensure durability and reliability.</div>
-                    <div class="c_maincolor-3blackveryverylight f_p main_section3_text"><span class="f_h6 c_white">Innovative Design:</span> Incorporating state-of-the-art
+                    <div class="c_maincolor-3blackveryverylight f_p main_section3_text"><span
+                            class="f_h6 c_white">Innovative Design:</span> Incorporating state-of-the-art
                         technology, our helmets offer advanced
                         features that enhance both functionality and user experience.</div>
-                    <div class="c_maincolor-3blackveryverylight f_p main_section3_text"><span class="f_h6 c_white">Commitment to Customer Satisfaction:</span> With a steadfast
+                    <div class="c_maincolor-3blackveryverylight f_p main_section3_text"><span
+                            class="f_h6 c_white">Commitment to Customer Satisfaction:</span> With a steadfast
                         dedication to customer feedback and
                         service excellence, we continuously strive to surpass expectations and deliver unparalleled
                         satisfaction.</div>
@@ -1414,7 +1450,8 @@
             </div>
             <div class="d-flex justify-content-center">
                 <button class="f_ps bc_maincolor-3black c_maincolor-1yellow" onclick="goToHelmet()"
-                    id="main_section3_bn">More Helmat</button></div>
+                    id="main_section3_bn">More Helmat</button>
+            </div>
         </div>
     </div>
     <!-- main_section4--------------------------------------------- -->
@@ -1434,19 +1471,20 @@
                         freedom.
                     </div>
                 </div>
-                <div class="col-6 d-flex align-items-center flex-wrap" id="main_section4_img_content" style="border: 3px black solid;">
+                <div class="col-6 d-flex align-items-center flex-wrap" id="main_section4_img_content"
+                    style="border: 3px black solid;">
                     <div>
-                    <div class="d-flex justify-content-center">
-                        <div class="main_section4_img" id="main_section4_img1"></div>
-                        <div class="main_section4_img" id="main_section4_img2"></div>
-                        <div class="main_section4_img" id="main_section4_img3"></div>
+                        <div class="d-flex justify-content-center">
+                            <div class="main_section4_img" id="main_section4_img1"></div>
+                            <div class="main_section4_img" id="main_section4_img2"></div>
+                            <div class="main_section4_img" id="main_section4_img3"></div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="main_section4_img" id="main_section4_img4"></div>
+                            <div class="main_section4_img" id="main_section4_img5"></div>
+                            <div class="main_section4_img" id="main_section4_img6"></div>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="main_section4_img" id="main_section4_img4"></div>
-                        <div class="main_section4_img" id="main_section4_img5"></div>
-                        <div class="main_section4_img" id="main_section4_img6"></div>
-                    </div>
-                </div>
                 </div>
             </div>
 
@@ -1486,8 +1524,8 @@
     </div>
 </body>
 <script>
-     // nav-----------------------------------------------
-     spring1 = 0
+    // nav-----------------------------------------------
+    spring1 = 0
     spring2 = 0
     spring3 = 0
     summer1 = 0
@@ -1499,8 +1537,8 @@
     winter1 = 0
     winter2 = 0
     winter3 = 0
-    
-    itemCountList = [spring1,spring2,spring3,summer1,summer2,summer3,fall1,fall2,fall3,winter1,winter2,winter3]
+
+    itemCountList = [spring1, spring2, spring3, summer1, summer2, summer3, fall1, fall2, fall3, winter1, winter2, winter3]
 
     helmetspring1 = 0
     helmetspring2 = 0
@@ -1514,8 +1552,8 @@
     helmetwinter1 = 0
     helmetwinter2 = 0
     helmetwinter3 = 0
-    
-    helmetItemCountList = [helmetspring1,helmetspring2,helmetspring3,helmetsummer1,helmetsummer2,helmetsummer3,helmetfall1,helmetfall2,helmetfall3,helmetwinter1,helmetwinter2,helmetwinter3,]
+
+    helmetItemCountList = [helmetspring1, helmetspring2, helmetspring3, helmetsummer1, helmetsummer2, helmetsummer3, helmetfall1, helmetfall2, helmetfall3, helmetwinter1, helmetwinter2, helmetwinter3,]
 
     navIds = [
         'nav_cart_ui_item_spring1_content',
@@ -1575,12 +1613,12 @@
         "cart_section2_tbody_winter3_input",
     ]
 
-    function reLoad(){
-        for (i in itemCountList){
-            if(itemCountList[i] == 0){
+    function reLoad() {
+        for (i in itemCountList) {
+            if (itemCountList[i] == 0) {
                 document.getElementById(navIds[i]).style.display = 'none'
                 document.getElementById(cartIds[i]).style.display = 'none'
-            }else {
+            } else {
                 document.getElementById(navIds[i]).style.display = 'flex'
                 document.getElementById(cartIds[i]).style.display = 'table-row'
                 document.getElementById(navInputIds[i]).value = itemCountList[i]
@@ -1589,14 +1627,14 @@
         }
     }
 
-    
-    function cardVisible(itemIndex,navId,cartId){
+
+    function cardVisible(itemIndex, navId, cartId) {
         navcard = document.getElementById(navId)
         cartcard = document.getElementById(cartId)
-        if(itemCountList[itemIndex] == 0){
+        if (itemCountList[itemIndex] == 0) {
             navcard.style.display = 'none'
             cartcard.style.display = 'none'
-        }else{
+        } else {
             navcard.style.display = 'flex'
             cartcard.style.display = 'table-row'
         }
@@ -1604,7 +1642,7 @@
     }
 
 
-    function addCount(navId, cartId, itemIndex){
+    function addCount(navId, cartId, itemIndex) {
         itemCountList[itemIndex] += 1
         navinput = document.getElementById(navId)
         cartinput = document.getElementById(cartId)
@@ -1613,10 +1651,10 @@
 
         countSelect()
     }
-    function minusCount(navId, cartId, itemIndex){
+    function minusCount(navId, cartId, itemIndex) {
         navinput = document.getElementById(navId)
         cartinput = document.getElementById(cartId)
-        if ( itemCountList[itemIndex] <= 0) {
+        if (itemCountList[itemIndex] <= 0) {
             itemCountList[itemIndex] = 0
         } else {
             itemCountList[itemIndex] -= 1
@@ -1627,7 +1665,7 @@
         countSelect()
     }
 
-    function inputChange(inputId, navId, cartId, itemIndex){
+    function inputChange(inputId, navId, cartId, itemIndex) {
         navinput = document.getElementById(navId)
         cartinput = document.getElementById(cartId)
 
@@ -1640,7 +1678,7 @@
         countSelect()
     }
 
-    function helmetInputChange(inputId,itemIndex){
+    function helmetInputChange(inputId, itemIndex) {
 
         inputvalue = parseInt(document.getElementById(inputId).value)
         helmetItemCountList[itemIndex] = inputvalue
@@ -1648,7 +1686,7 @@
         countSelect()
     }
 
-    function deleteBn(itemIndex){
+    function deleteBn(itemIndex) {
         itemCountList[itemIndex] = 0
 
         countSelect()
@@ -1668,7 +1706,7 @@
 
         user_container_cancel.onclick = function () {
             user_content.style.animation = 'fadeout  0.5s ease-in'
-            function setHidden(){
+            function setHidden() {
                 user_container.style.visibility = 'hidden'
                 user_content.style.visibility = 'hidden'
             }
@@ -1682,7 +1720,7 @@
             nav_cart_ui_content.style.animation = 'flyout 0.5s ease-out'
             user_container.style.animation = 'flyout 0.5s ease-out'
 
-            function setHidden(){
+            function setHidden() {
                 user_container.style.visibility = 'hidden'
                 user_content.style.visibility = 'hidden'
                 nav_cart_ui_content.style.visibility = 'hidden'
@@ -1705,7 +1743,7 @@
         nav_cart_ui_cancel.onclick = function () {
             nav_cart_ui_content.style.animation = 'flyout 0.5s ease-out'
 
-            function setHidden(){
+            function setHidden() {
                 nav_cart_ui_content.style.visibility = 'hidden'
                 user_content.style.visibility = 'hidden'
             }
@@ -1713,10 +1751,10 @@
                 setHidden()
             }, 500);
         }
-        nav_cart_ui_gocheckoutbn.onclick = function(){
+        nav_cart_ui_gocheckoutbn.onclick = function () {
 
-            document.getElementById('helmet_pagebn').style.display= 'none'
-            document.getElementById('cart_page').style.display= 'inline'
+            document.getElementById('helmet_pagebn').style.display = 'none'
+            document.getElementById('cart_page').style.display = 'inline'
 
             reLoad()
 
@@ -1725,27 +1763,27 @@
 
         }
 
-        
+
 
     }
 
 
 
 
-    user_login_bn.onclick = function(){
+    user_login_bn.onclick = function () {
         email = document.getElementById('nav_cart_ui_email_input').value.trim()
-        if(email.includes('@') == false){
+        if (email.includes('@') == false) {
             document.getElementById('nav_cart_ui_email_input_warn').innerHTML = '<span class="f_ps" style = "color:red;"> Incorrect input format </span>'
-        }else{
+        } else {
             document.getElementById('nav_cart_ui_email_input_warn').innerHTML = ''
         }
-        
+
     }
 
-//main
-function goToHelmet() {
-    window.location.href = './結帳頁面.html'
-}
+    //main
+    function goToHelmet() {
+        window.location.href = './結帳頁面.html'
+    }
 
 
 </script>
