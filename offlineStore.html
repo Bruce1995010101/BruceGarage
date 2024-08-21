@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bruce`s Garage</title>
-    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./_css/bootstrap.css">
     <script src="./_js/bootstrap.bundle.js"></script>
     <script src="./_js/bootstrap.min.js"></script>
-    <script src="./_js/popper.min.js"></script>
+    <script src="./_js/popper.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styleguide.css">
     <link rel="stylesheet" href="./set.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,21 +241,44 @@
         }
 
 
-        @keyframes flyin{
-            0% {transform: translateX(500px);}
-            100% {transform: translateX(0);}
+        @keyframes flyin {
+            0% {
+                transform: translateX(500px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
         }
-        @keyframes flyout{
-            0% {transform: translateX(0);}
-            100% {transform: translateX(500px);}
+
+        @keyframes flyout {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(500px);
+            }
         }
-        @keyframes fadein{
-            0% {opacity: 0;}
-            100% {opacity: 100%;}
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 100%;
+            }
         }
-        @keyframes fadeout{
-            0% {opacity: 100%;}
-            100% {opacity: 0%;}
+
+        @keyframes fadeout {
+            0% {
+                opacity: 100%;
+            }
+
+            100% {
+                opacity: 0%;
+            }
         }
     </style>
 
@@ -262,37 +290,39 @@
             font-weight: 400;
             font-style: normal;
         }
-        
+
         #cart_section1_title {
             margin: 50px;
             text-decoration: underline;
             text-decoration-thickness: 2px;
-            
+
         }
     </style>
     <!-- /* offlinestore_section2------------------------------------------- */ -->
     <style>
-        #offlinestore_section2_mapdiv{
+        #offlinestore_section2_mapdiv {
             padding: 70px 50px;
-            
+
         }
-        #offlinestore_section2_textdiv{
+
+        #offlinestore_section2_textdiv {
             padding: 100px 50px;
         }
 
         @media screen and (max-width:750px) {
-            #offlinestore_section2_textdiv{
-            padding: 50px 20px;
-        }
+            #offlinestore_section2_textdiv {
+                padding: 50px 20px;
+            }
         }
 
         @media screen and (max-width:550px) {
-            #offlinestore_section2_textdiv{
-            padding: 20px 0;
-        }
-            #offlinestore_section2_textdiv{
-            padding: 20px 0;
-        }
+            #offlinestore_section2_textdiv {
+                padding: 20px 0;
+            }
+
+            #offlinestore_section2_textdiv {
+                padding: 20px 0;
+            }
         }
     </style>
 
@@ -322,9 +352,10 @@
                 <span id="nav_button_icon" class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul  class="navbar-nav  container-lg">
+                <ul class="navbar-nav  container-lg">
                     <li class="nav-item">
-                        <a id="nav-active" class="nav-link c_white active " aria-current="page" href="./index.html">Home</a>
+                        <a id="nav-active" class="nav-link c_white active " aria-current="page"
+                            href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link c_white" href="./event.html">News</a>
@@ -336,7 +367,7 @@
                         <a class="nav-link c_white" href="./offlineStore.html">Offline Store</a>
                     </li>
                 </ul>
-                
+
                 <ul class="navbar-nav ms-auto">
                     <li>
                         <a class="nav-link c_white" href="#">
@@ -397,7 +428,7 @@
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
                     <button class="input-group-text" id="nav_cart_ui_item_spring1_minus"
-                    onclick="minusCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
+                        onclick="minusCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -407,9 +438,10 @@
                     </button>
                     <input type="text" class="form-control helmet_section2_product_buy_input" value="0"
                         aria-label="Input group example" aria-describedby="basic-addon2"
-                        id="nav_cart_ui_item_spring1_input" onchange="inputChange(`cart_section2_tbody_spring1_input`,'nav_cart_ui_item_spring1_input',`cart_section2_tbody_spring1_input`,0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
+                        id="nav_cart_ui_item_spring1_input"
+                        onchange="inputChange(`cart_section2_tbody_spring1_input`,'nav_cart_ui_item_spring1_input',`cart_section2_tbody_spring1_input`,0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
                     <button class="input-group-text" id="nav_cart_ui_item_spring1_plus"
-                    onclick="addCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
+                        onclick="addCount('nav_cart_ui_item_spring1_input' , `cart_section2_tbody_spring1_input`, 0);cardVisible(0,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -439,8 +471,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_spring2_minus" 
-                    onclick="minusCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring2_minus"
+                        onclick="minusCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -452,8 +484,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_spring2_input"
                         onchange="inputChange(`cart_section2_tbody_spring2_input`,'nav_cart_ui_item_spring2_input',`cart_section2_tbody_spring2_input`,1);cardVisible(1,'nav_cart_ui_item_spring1_content','cart_section2_tbody_spring1_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_spring2_plus" 
-                    onclick="addCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring2_plus"
+                        onclick="addCount('nav_cart_ui_item_spring2_input' , `cart_section2_tbody_spring2_input`, 1);cardVisible(1,'nav_cart_ui_item_spring2_content','cart_section2_tbody_spring2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -483,8 +515,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_spring3_minus" 
-                    onclick="minusCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring3_minus"
+                        onclick="minusCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -496,8 +528,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_spring3_input"
                         onchange="inputChange(`cart_section2_tbody_spring3_input`,'nav_cart_ui_item_spring3_input',`cart_section2_tbody_spring3_input`,2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_spring3_plus" 
-                    onclick="addCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_spring3_plus"
+                        onclick="addCount('nav_cart_ui_item_spring3_input' , `cart_section2_tbody_spring3_input`, 2);cardVisible(2,'nav_cart_ui_item_spring3_content','cart_section2_tbody_spring3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -527,8 +559,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_summer1_minus" 
-                    onclick="minusCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer1_minus"
+                        onclick="minusCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -540,8 +572,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_summer1_input"
                         onchange="inputChange(`cart_section2_tbody_summer1_input`,'nav_cart_ui_item_summer1_input',`cart_section2_tbody_summer1_input`,3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_summer1_plus" 
-                    onclick="addCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer1_plus"
+                        onclick="addCount('nav_cart_ui_item_summer1_input' , `cart_section2_tbody_summer1_input`, 3);cardVisible(3,'nav_cart_ui_item_summer1_content','cart_section2_tbody_summer1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -571,8 +603,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_summer2_minus" 
-                    onclick="minusCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer2_minus"
+                        onclick="minusCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -584,8 +616,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_summer2_input"
                         onchange="inputChange(`cart_section2_tbody_summer2_input`,'nav_cart_ui_item_summer2_input',`cart_section2_tbody_summer2_input`,4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_summer2_plus" 
-                    onclick="addCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer2_plus"
+                        onclick="addCount('nav_cart_ui_item_summer2_input' , `cart_section2_tbody_summer2_input`, 4);cardVisible(4,'nav_cart_ui_item_summer2_content','cart_section2_tbody_summer2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -615,8 +647,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_summer3_minus" 
-                    onclick="minusCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer3_minus"
+                        onclick="minusCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -628,8 +660,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_summer3_input"
                         onchange="inputChange(`cart_section2_tbody_summer3_input`,'nav_cart_ui_item_summer3_input',`cart_section2_tbody_summer3_input`,5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_summer3_plus" 
-                    onclick="addCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_summer3_plus"
+                        onclick="addCount('nav_cart_ui_item_summer3_input' , `cart_section2_tbody_summer3_input`, 5);cardVisible(5,'nav_cart_ui_item_summer3_content','cart_section2_tbody_summer3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -659,8 +691,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_fall1_minus" 
-                    onclick="minusCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall1_minus"
+                        onclick="minusCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -672,8 +704,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_fall1_input"
                         onchange="inputChange(`cart_section2_tbody_fall1_input`,'nav_cart_ui_item_fall1_input',`cart_section2_tbody_fall1_input`,6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_fall1_plus" 
-                    onclick="addCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall1_plus"
+                        onclick="addCount('nav_cart_ui_item_fall1_input' , `cart_section2_tbody_fall1_input`, 6);cardVisible(6,'nav_cart_ui_item_fall1_content','cart_section2_tbody_fall1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -703,8 +735,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_fall2_minus" 
-                    onclick="minusCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall2_minus"
+                        onclick="minusCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -716,8 +748,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_fall2_input"
                         onchange="inputChange(`cart_section2_tbody_fall2_input`,'nav_cart_ui_item_fall2_input',`cart_section2_tbody_fall2_input`,7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_fall2_plus" 
-                    onclick="addCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall2_plus"
+                        onclick="addCount('nav_cart_ui_item_fall2_input' , `cart_section2_tbody_fall2_input`, 7);cardVisible(7,'nav_cart_ui_item_fall2_content','cart_section2_tbody_fall2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -747,8 +779,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_fall3_minus" 
-                    onclick="minusCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall3_minus"
+                        onclick="minusCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -760,8 +792,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_fall3_input"
                         onchange="inputChange(`cart_section2_tbody_fall3_input`,'nav_cart_ui_item_fall3_input',`cart_section2_tbody_fall3_input`,8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_fall3_plus" 
-                    onclick="addCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_fall3_plus"
+                        onclick="addCount('nav_cart_ui_item_fall3_input' , `cart_section2_tbody_fall3_input`, 8);cardVisible(8,'nav_cart_ui_item_fall3_content','cart_section2_tbody_fall3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -791,8 +823,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_winter1_minus" 
-                    onclick="minusCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter1_minus"
+                        onclick="minusCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -804,8 +836,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_winter1_input"
                         onchange="inputChange(`cart_section2_tbody_winter1_input`,'nav_cart_ui_item_winter1_input',`cart_section2_tbody_winter1_input`,9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_winter1_plus" 
-                    onclick="addCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter1_plus"
+                        onclick="addCount('nav_cart_ui_item_winter1_input' , `cart_section2_tbody_winter1_input`, 9);cardVisible(9,'nav_cart_ui_item_winter1_content','cart_section2_tbody_winter1_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -835,8 +867,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_winter2_minus" 
-                    onclick="minusCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter2_minus"
+                        onclick="minusCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -848,8 +880,8 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_winter2_input"
                         onchange="inputChange(`cart_section2_tbody_winter2_input`,'nav_cart_ui_item_winter2_input',`cart_section2_tbody_winter2_input`,10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_winter2_plus" 
-                    onclick="addCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter2_plus"
+                        onclick="addCount('nav_cart_ui_item_winter2_input' , `cart_section2_tbody_winter2_input`, 10);cardVisible(10,'nav_cart_ui_item_winter2_content','cart_section2_tbody_winter2_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -879,8 +911,8 @@
             </div>
             <div class="col-5 " style=" padding-left:80px;padding-top: 30px;">
                 <div class="input-group helmet_section2_product_buy">
-                    <button class="input-group-text" id="nav_cart_ui_item_winter3_minus" 
-                    onclick="minusCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter3_minus"
+                        onclick="minusCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-dash-square" viewBox="0 0 16 16">
                             <path
@@ -892,8 +924,9 @@
                         aria-label="Input group example" aria-describedby="basic-addon2"
                         id="nav_cart_ui_item_winter3_input"
                         onchange="inputChange(`cart_section2_tbody_winter3_input`,'nav_cart_ui_item_winter3_input',`cart_section2_tbody_winter3_input`,11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
-                    <button class="input-group-text" id="nav_cart_ui_item_winter3_plus" onclick="plusButtun('nav_cart_ui_item_winter3_input' , `nav_cart_ui_item_winter3_input`)"
-                    onclick="addCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
+                    <button class="input-group-text" id="nav_cart_ui_item_winter3_plus"
+                        onclick="plusButtun('nav_cart_ui_item_winter3_input' , `nav_cart_ui_item_winter3_input`)"
+                        onclick="addCount('nav_cart_ui_item_winter3_input' , `cart_section2_tbody_winter3_input`, 11);cardVisible(11,'nav_cart_ui_item_winter3_content','cart_section2_tbody_winter3_tr')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-plus-square" viewBox="0 0 16 16">
                             <path
@@ -928,8 +961,8 @@
                                 </path>
                             </svg>
                         </span>
-                        <input id="nav_cart_ui_email_input" type="email" class="form-control" placeholder="Email" aria-label="Input group example"
-                            aria-describedby="basic-addon1">
+                        <input id="nav_cart_ui_email_input" type="email" class="form-control" placeholder="Email"
+                            aria-label="Input group example" aria-describedby="basic-addon1">
                     </div>
                     <br>
                     <div class="input-group" id="user-login-inp-password">
@@ -963,13 +996,17 @@
     <div class="bc_dark">
         <div class="container-lg">
             <div class="row" id="offlinestore_section2_mapdiv">
-                <div class="col-6 d-flex justify-content-center" >
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d548.8017441688556!2d120.6513320787547!3d24.150755479886808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d0cc59775a1%3A0x9af4ea8eb421cf05!2z5ZyL5rOw5Lq65aO9IOWPsOS4reWIhuWFrOWPuA!5e0!3m2!1szh-TW!2stw!4v1717245227557!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-6 d-flex justify-content-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d548.8017441688556!2d120.6513320787547!3d24.150755479886808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d0cc59775a1%3A0x9af4ea8eb421cf05!2z5ZyL5rOw5Lq65aO9IOWPsOS4reWIhuWFrOWPuA!5e0!3m2!1szh-TW!2stw!4v1717245227557!5m2!1szh-TW!2stw"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-6 " id="offlinestore_section2_textdiv">
                     <div class="f_p c_white">Taichung Zhongqing Store</div>
                     <br>
-                    <div class="f_ps c_maincolor-3blackveryverylight">No. 51, Sec. 2, Gongyi Rd., Nantun Dist., Taichung City, Taiwan</div>
+                    <div class="f_ps c_maincolor-3blackveryverylight">No. 51, Sec. 2, Gongyi Rd., Nantun Dist., Taichung
+                        City, Taiwan</div>
                     <br>
                     <div class="f_ps c_maincolor-3blackveryverylight">(04)XXXX-XXXX</div>
                 </div>
@@ -977,7 +1014,7 @@
 
         </div>
     </div>
-  
+
     <!-- cart_sectionFinal--------------------------------------------- -->
     <div class="bc_maincolor-3black">
         <div class="container-lg d-flex justify-content-start">
@@ -1008,8 +1045,8 @@
     winter1 = 0
     winter2 = 0
     winter3 = 0
-    
-    itemCountList = [spring1,spring2,spring3,summer1,summer2,summer3,fall1,fall2,fall3,winter1,winter2,winter3]
+
+    itemCountList = [spring1, spring2, spring3, summer1, summer2, summer3, fall1, fall2, fall3, winter1, winter2, winter3]
 
     helmetspring1 = 0
     helmetspring2 = 0
@@ -1023,8 +1060,8 @@
     helmetwinter1 = 0
     helmetwinter2 = 0
     helmetwinter3 = 0
-    
-    helmetItemCountList = [helmetspring1,helmetspring2,helmetspring3,helmetsummer1,helmetsummer2,helmetsummer3,helmetfall1,helmetfall2,helmetfall3,helmetwinter1,helmetwinter2,helmetwinter3,]
+
+    helmetItemCountList = [helmetspring1, helmetspring2, helmetspring3, helmetsummer1, helmetsummer2, helmetsummer3, helmetfall1, helmetfall2, helmetfall3, helmetwinter1, helmetwinter2, helmetwinter3,]
 
     navIds = [
         'nav_cart_ui_item_spring1_content',
@@ -1084,12 +1121,12 @@
         "cart_section2_tbody_winter3_input",
     ]
 
-    function reLoad(){
-        for (i in itemCountList){
-            if(itemCountList[i] == 0){
+    function reLoad() {
+        for (i in itemCountList) {
+            if (itemCountList[i] == 0) {
                 document.getElementById(navIds[i]).style.display = 'none'
                 document.getElementById(cartIds[i]).style.display = 'none'
-            }else {
+            } else {
                 document.getElementById(navIds[i]).style.display = 'flex'
                 document.getElementById(cartIds[i]).style.display = 'table-row'
                 document.getElementById(navInputIds[i]).value = itemCountList[i]
@@ -1098,14 +1135,14 @@
         }
     }
 
-    
-    function cardVisible(itemIndex,navId,cartId){
+
+    function cardVisible(itemIndex, navId, cartId) {
         navcard = document.getElementById(navId)
         cartcard = document.getElementById(cartId)
-        if(itemCountList[itemIndex] == 0){
+        if (itemCountList[itemIndex] == 0) {
             navcard.style.display = 'none'
             cartcard.style.display = 'none'
-        }else{
+        } else {
             navcard.style.display = 'flex'
             cartcard.style.display = 'table-row'
         }
@@ -1113,7 +1150,7 @@
     }
 
 
-    function addCount(navId, cartId, itemIndex){
+    function addCount(navId, cartId, itemIndex) {
         itemCountList[itemIndex] += 1
         navinput = document.getElementById(navId)
         cartinput = document.getElementById(cartId)
@@ -1122,10 +1159,10 @@
 
         countSelect()
     }
-    function minusCount(navId, cartId, itemIndex){
+    function minusCount(navId, cartId, itemIndex) {
         navinput = document.getElementById(navId)
         cartinput = document.getElementById(cartId)
-        if ( itemCountList[itemIndex] <= 0) {
+        if (itemCountList[itemIndex] <= 0) {
             itemCountList[itemIndex] = 0
         } else {
             itemCountList[itemIndex] -= 1
@@ -1136,7 +1173,7 @@
         countSelect()
     }
 
-    function inputChange(inputId, navId, cartId, itemIndex){
+    function inputChange(inputId, navId, cartId, itemIndex) {
         navinput = document.getElementById(navId)
         cartinput = document.getElementById(cartId)
 
@@ -1149,7 +1186,7 @@
         countSelect()
     }
 
-    function helmetInputChange(inputId,itemIndex){
+    function helmetInputChange(inputId, itemIndex) {
 
         inputvalue = parseInt(document.getElementById(inputId).value)
         helmetItemCountList[itemIndex] = inputvalue
@@ -1157,7 +1194,7 @@
         countSelect()
     }
 
-    function deleteBn(itemIndex){
+    function deleteBn(itemIndex) {
         itemCountList[itemIndex] = 0
 
         countSelect()
@@ -1177,7 +1214,7 @@
 
         user_container_cancel.onclick = function () {
             user_content.style.animation = 'fadeout  0.5s ease-in'
-            function setHidden(){
+            function setHidden() {
                 user_container.style.visibility = 'hidden'
                 user_content.style.visibility = 'hidden'
             }
@@ -1191,7 +1228,7 @@
             nav_cart_ui_content.style.animation = 'flyout 0.5s ease-out'
             user_container.style.animation = 'flyout 0.5s ease-out'
 
-            function setHidden(){
+            function setHidden() {
                 user_container.style.visibility = 'hidden'
                 user_content.style.visibility = 'hidden'
                 nav_cart_ui_content.style.visibility = 'hidden'
@@ -1214,7 +1251,7 @@
         nav_cart_ui_cancel.onclick = function () {
             nav_cart_ui_content.style.animation = 'flyout 0.5s ease-out'
 
-            function setHidden(){
+            function setHidden() {
                 nav_cart_ui_content.style.visibility = 'hidden'
                 user_content.style.visibility = 'hidden'
             }
@@ -1222,10 +1259,10 @@
                 setHidden()
             }, 500);
         }
-        nav_cart_ui_gocheckoutbn.onclick = function(){
+        nav_cart_ui_gocheckoutbn.onclick = function () {
 
-            document.getElementById('helmet_pagebn').style.display= 'none'
-            document.getElementById('cart_page').style.display= 'inline'
+            document.getElementById('helmet_pagebn').style.display = 'none'
+            document.getElementById('cart_page').style.display = 'inline'
 
             reLoad()
 
@@ -1234,21 +1271,21 @@
 
         }
 
-        
+
 
     }
 
 
 
 
-    user_login_bn.onclick = function(){
+    user_login_bn.onclick = function () {
         email = document.getElementById('nav_cart_ui_email_input').value.trim()
-        if(email.includes('@') == false){
+        if (email.includes('@') == false) {
             document.getElementById('nav_cart_ui_email_input_warn').innerHTML = '<span class="f_ps" style = "color:red;"> Incorrect input format </span>'
-        }else{
+        } else {
             document.getElementById('nav_cart_ui_email_input_warn').innerHTML = ''
         }
-        
+
     }
 
 </script>
